@@ -2,14 +2,9 @@ package com.example.tickets;
 
 import java.util.regex.Pattern;
 
-/**
- * Central place for validation helpers.
- *
- * Students can extend this as needed.
- */
 public final class Validation {
 
-    private static final Pattern EMAIL = Pattern.compile("^[^@\s]+@[^@\s]+\.[^@\s]+$");
+    private static final Pattern EMAIL = Pattern.compile("^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$");
     private static final Pattern TICKET_ID = Pattern.compile("^[A-Z0-9-]+$");
 
     private Validation() {}

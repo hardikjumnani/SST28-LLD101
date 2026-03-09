@@ -2,12 +2,6 @@ package com.example.metrics;
 
 import java.util.Map;
 
-/**
- * PulseMeter CLI entry point.
- *
- * Starter behavior prints instance identity and increments a counter.
- * After you fix the Singleton, the identity should be stable across the app.
- */
 public class App {
 
     public static void main(String[] args) throws Exception {
@@ -16,7 +10,6 @@ public class App {
         MetricsLoader loader = new MetricsLoader();
         MetricsRegistry loaded = loader.loadFromFile(propsPath);
 
-        // In a correct design, loader should populate the SAME singleton instance.
         MetricsRegistry global = MetricsRegistry.getInstance();
 
         System.out.println("Loaded registry instance  : " + System.identityHashCode(loaded));

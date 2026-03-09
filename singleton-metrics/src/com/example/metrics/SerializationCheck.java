@@ -2,10 +2,6 @@ package com.example.metrics;
 
 import java.io.*;
 
-/**
- * Serializes and deserializes the registry.
- * Starter will typically produce a NEW instance. After fix, it must return the same singleton.
- */
 public class SerializationCheck {
 
     public static void main(String[] args) throws Exception {
